@@ -1,5 +1,5 @@
 # customPermission
-跟据某大神的思想封装的一款android动态权限请求框架
+跟据西门老师的思想封装的一款android动态权限请求框架
 
 使用方式
 第一步：
