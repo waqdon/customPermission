@@ -34,7 +34,10 @@ Baseactivity implements IPermissionCallback{
 
 第二步：
 通过注解请求码区分对应的回调结果
-@IPermission(REQUESTCODECAMERA)
+
+MainActivity extends Baseactivity｛
+
+    @IPermission(REQUESTCODECAMERA)
     private void requestCamera(){
         if(PermissionManager.hasPermission(this, Manifest.permission.CAMERA)){
             //权限通过
@@ -43,3 +46,4 @@ Baseactivity implements IPermissionCallback{
             PermissionManager.requestPermissions(this, "请求相机权限", REQUESTCODECAMERA, Manifest.permission.CAMERA);
         }
     }
+   ｝
