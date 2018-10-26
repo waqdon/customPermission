@@ -35,8 +35,8 @@ Baseactivity implements IPermissionCallback{
 第二步：
 通过注解请求码区分对应的回调结果
 @IPermission(REQUESTCODECAMERA)
-private void requestCamera(){
-    if(PermissionManager.hasPermission(this, Manifest.permission.CAMERA)){
+    private void requestCamera(){
+        if(PermissionManager.hasPermission(this, Manifest.permission.CAMERA)){
             //权限通过
             Toast.makeText(this, "相机权限通过", Toast.LENGTH_SHORT).show();
         }else {
